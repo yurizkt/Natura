@@ -38,4 +38,14 @@ $(function(){
 			$('.carousel').animate({'margin-left': '+=' +slide+ 'px'}, '500');
 		}
 	});
+
+	$('#link-player').on('click', function(){
+		$('#player-bg').addClass('player-ativo');
+	});
+
+	$('#close').on('click', function(){
+		$('#player-bg').removeClass('player-ativo')
+						.remove('#player-bg');
+	})
+
 });
